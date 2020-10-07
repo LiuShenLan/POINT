@@ -22,8 +22,8 @@ saveDir = '../data/MSDataSet_process/'
 if not os.path.exists(saveDir):
     os.makedirs(saveDir)
 #The dataset
-matFile = '/home/share/fating/OriginalDataset/MSDataSet/data/annotations'
-ImagePath = '/home/share/fating/OriginalDataset/MSDataSet/images/'
+matFile = '../MSDataset/data/annotations'
+ImagePath = '../MSDataset/images/'
 data = scio.loadmat(matFile)
 train = data['train']
 val = data['val']
@@ -223,4 +223,4 @@ for i in range(num_test):
                        + foldName + '_Img_' + No_Face[len(No_Face) - 2:] + \
                        '_Label_' + str(int(label)) + '.jpg'
         imgCopy.save(ImgName)
-np.save('MSindex.npy', {'train': trainSet, 'val': valSet, 'test': testSet})
+np.save('../data/MSindex.npy', {'train': trainSet, 'val': valSet, 'test': testSet})

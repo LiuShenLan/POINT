@@ -24,7 +24,7 @@ class RelatinNetCMSIP(Dataset): #img+face+faceCont+coor
         # processing Train
         # self.num_videos = 8
         self.root = root
-        index = np.load(index).tolist();
+        index = np.load(index,allow_pickle=True).tolist();
         index_train = index['train']
         index_test = index['test']
         index_val = index['val']

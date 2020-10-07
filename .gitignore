@@ -10,3 +10,5 @@ resultFile
 
 *.txt
 
+.idea
+.vscode

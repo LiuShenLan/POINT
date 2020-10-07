@@ -22,8 +22,8 @@ saveDir = '../data/NCAADataSet_process/'
 if not os.path.exists(saveDir):
     os.makedirs(saveDir)
 #The dataset
-matFile = '/home/share/fating/OriginalDataset/NCAA/data/annotations'
-ImagePath = '/home/share/fating/OriginalDataset/NCAA/Images/'
+matFile = '../NCAADataset/data/annotations'
+ImagePath = '../NCAADataset/Images/'
 data = scio.loadmat(matFile)
 train = data['train']
 val = data['val']

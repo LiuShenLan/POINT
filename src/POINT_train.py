@@ -59,7 +59,7 @@ parser.add_argument('--decay-epoch', type=int, default=100,
                     help='number of epoch per decay')
 parser.add_argument('--h',type=int, default=4,help='the number of relation submodule')
 parser.add_argument('--N',type=int,default=2,help='the number of relation module')
-parser.add_argument('--save_iter',type=int,default=100,help='Save the model every save_iter epoch')
+parser.add_argument('--save_iter',type=int,default=1,help='Save the model every save_iter epoch')
 parser.add_argument('--save_name',type=str,default='POINT',help='the name of saved model')
 parser.add_argument('--index_name',type=str,default='../data/MSindex.npy',help='the name of index of train, val and test set')
 parser.add_argument('--dataset_path',type=str,default='../data/MSDataSet_process',help='the path of dataset')
